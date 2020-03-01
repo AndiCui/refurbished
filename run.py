@@ -2,6 +2,8 @@ from refurbished import Store
 
 store = Store('it')
 
-ipads = store.get_ipads()
+products = store.get_macs()
 
-print(len(ipads))
+print(len(products))
+
+[print(product) for product in products if product.savings_price > 350]
